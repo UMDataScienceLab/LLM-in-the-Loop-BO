@@ -1,2 +1,2 @@
-# LLM-in-the-Loop-BO
-\texttt{LLINBO}: Trustworthy LLM-in-the-Loop Bayesian Optimization
+# LLINBO: Trustworthy LLM-in-the-Loop Bayesian Optimization
+## Abstract
