@@ -7,19 +7,19 @@ Bayesian optimization (BO) is a sequential decision-making tool widely used for 
 The LLM agent embedded in this code uses the OpenAI API with the ChatGPT `gpt-3.5-turbo` model.  
 To get started, please refer to the [OpenAI API documentation](https://platform.openai.com/docs/overview) for more details.
 
-<pre> ## Black-box Optimization Task 
+## Black-box Optimization Task 
 The implementation for black-box optimization is in `LLM_agent_BBFO.py`. 
   - To reproduce results from the paper, see `BBFO_examples.ipynb`. 
   - Experimental results are available in the `Black-box-opt_task_data/` directory. 
   - To optimize your own function, simply define the function pattern along with its bounds and dimensionality. 
   
---- ## Hyperparameter Tuning Task 
+## Hyperparameter Tuning Task 
   The implementation for hyperparameter tuning is in `LLM_agent_HPT.py`. 
   - See `HPT_examples.ipynb` to reproduce results. 
   - Refer to `Hyperparameter-tuning_task_data/` for experiment logs and outputs. 
   - To apply LLINBO to your own tuning problem, specify a new loss function and provide a suitable description card in `HPT_examples.ipynb`. 
   
---- ## 3D Printing Experiment 
+## 3D Printing Experiment 
   The full pipeline is provided in `3D_printing_experiment.ipynb`. 
   - Make sure `AM_par_func.py` is placed in the same directory. It is used for running parallel LLM-assisted BO. 
   - Historical observations and corresponding results are included in the notebook and the `3D-printing_data/` directory. </pre>
