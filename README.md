@@ -23,3 +23,19 @@ The implementation for black-box optimization is in `LLM_agent_BBFO.py`.
   The full pipeline is provided in `3D_printing_experiment.ipynb`. 
   - Make sure `AM_par_func.py` is placed in the same directory. It is used for running parallel LLM-assisted BO. 
   - Historical observations and corresponding results are included in the notebook and the `3D-printing_data/` directory. </pre>
+
+## Citation
+
+[Preprint](https://arxiv.org/abs/2505.14756) (arXiv, 2025). If you use this code, please cite:
+
+```bibtex
+@misc{chang2025llinbo,
+  title={{LLINBO}: Trustworthy {LLM}-in-the-Loop {B}ayesian Optimization},
+  author={Chang, Chih-Yu and Azvar, Milad and Okwudire, Chinedum and Al Kontar, Raed},
+  year={2025},
+  eprint={2505.14756},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2505.14756}
+}
+```
