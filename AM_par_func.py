@@ -91,6 +91,9 @@ def _predict_llm_score_AM(args):
                 max_tokens=50
             ).choices[0].message.content.strip()
             print(response)
-            return float(response), tuple(x)
+            score = float(response)
+            if not np.isfinite(score):
+                raise ValueError("non-finite prediction")
+            return score, tuple(x)
         except ValueError:
             continue
